@@ -9,7 +9,9 @@ class CashRegister
   def initialize (discount=0)
     @discount = discount
     @total = 0.0
-    # transactions is array of hashes.  Each hash is :item and :price.
+    # transactions is array of hashes.  Each hash is :item and :price.  This is more than is needed
+    # for test spec but thinking of cash register, it seems common to want to do something like 
+    # print out the whole list (items + price + quantity)
     @transactions = []
   end
 
